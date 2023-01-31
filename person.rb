@@ -6,7 +6,7 @@ class Nameable
 
   def initialize(age, name = 'Unknown', parent_permission: true)
     @id = Random.rand(1..1000)
-    @corrector = Corrector.new
+    @corrector = Nameable.new
     @name = validate_name(name)
     @age = age
     @parent_permission = parent_permission
