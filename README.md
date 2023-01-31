@@ -119,7 +119,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-1 install postges in your local machine
+1 install ruby in your local machine
 
 2 well funcitioning vs code editor
 
@@ -136,7 +136,7 @@ Example command:
 Clone this repository to your desired folder:
 
 
-   git clone  https://github.com/juaryimami/rupby-project.git
+   git clone  https://github.com/juaryimami/OOP_SCHOOL_LIBRARY.git
 
 
 
