@@ -1,7 +1,6 @@
 require_relative './corrector'
 
 class Nameable
-
   attr_accessor :name, :age
   attr_reader :id
 
