@@ -1,6 +1,7 @@
 require_relative './corrector'
 
-class Person
+class Nameable
+
   attr_accessor :name, :age
   attr_reader :id
 
