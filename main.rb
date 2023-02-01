@@ -1,4 +1,4 @@
-require_relative 'app'
+require 'app'
 require_relative 'preserve'
 
 def main
