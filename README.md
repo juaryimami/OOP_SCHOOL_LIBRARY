@@ -211,7 +211,7 @@ Feel free to check the [issues page]( https://github.com/juaryimami/OOP_SCHOOL_L
 
 > Write a message to encourage readers to support your project
 
-If you like this project...
+If you like this project give me star it will help my carrieer and motivate me to work more
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,7 +221,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I would like to thank Microverse for giving me this opportunities
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
