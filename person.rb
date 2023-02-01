@@ -1,13 +1,15 @@
-require_relative './corrector'
+require_relative 'nameable'
+require_relative 'capitalize_decorator'
+require_relative 'trimmer_decorator'
 
-class Nameable
+class Person < Nameable
   attr_accessor :name, :age
   attr_reader :id
 
   def initialize(age, name = 'Unknown', parent_permission: true)
+    super()
     @id = Random.rand(1..1000)
-    @corrector = Nameable.new
-    @name = validate_name(name)
+    @name = name
     @age = age
     @parent_permission = parent_permission
   end
@@ -28,7 +30,13 @@ class Nameable
     end
   end
 
-  def validate_name(name)
-    @corrector.correct_name(name)
+  def correct_name
+    @name
   end
 end
+person = Person.new(22, 'maximilianus')
+person.correct_name
+capitalized_person = CapitalizeDecorator.new(person)
+capitalized_person.correct_name
+capitalized_trimmedperson = TrimmerDecorator.new(capitalizedPerson)
+capitalized_trimmedperson.correct_name
