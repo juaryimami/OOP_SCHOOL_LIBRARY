@@ -1,43 +1,8 @@
-# curriculum-databases-projects-template
+# curriculum-ruby-projects-template
 
-> This template should be used for database related projects at Microverse.
+> This template should be used for ruby projects at Microverse.
 > Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
 
-
-## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
-
-<a name="readme-top"></a>
-
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-After you're finished please remove all the comments and instructions!
--->
-
-
-<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -130,7 +95,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-1 install postges in your local machine
+1 install ruby in your local machine
 
 2 well funcitioning vs code editor
 
@@ -147,7 +112,7 @@ Example command:
 Clone this repository to your desired folder:
 
 
-   git clone  https://github.com/juaryimami/rupby-project.git
+   git clone  https://github.com/juaryimami/OOP_SCHOOL_LIBRARY.git
 
 
 
@@ -288,6 +253,5 @@ I would like to thank...
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
