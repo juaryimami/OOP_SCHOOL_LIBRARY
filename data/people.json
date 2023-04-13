@@ -1,0 +1,1 @@
+[{"tipo":"Student","name":"Alex","id":896,"age":"18","parent_permission":null,"classroom":"B201"},{"tipo":"Teacher","name":"Asdasd","id":865,"age":"24","parent_permission":true,"specialization":"asdasd"},{"tipo":"Teacher","name":"Guilherme","id":583,"age":"25","parent_permission":true,"specialization":"Antropology"}]

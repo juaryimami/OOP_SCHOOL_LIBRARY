@@ -4,80 +4,36 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
-<!-- PROJECT DESCRIPTION -->
 
 # 📖 OOP SCHOOL LIBRARY <a name="about-project"></a>
 
-> In this project, I will start building my school library app. In this initial step, I will implement the classes to represent students and teachers.
+In this project, I will start building my school library app. In this initial step, I will implement the classes to represent students and teachers.
 
-**[your_project__name]** is OOP SCHOOL LIBRARY
+## 🛠 Built With <a name="built-with"></a>
 
-## 🛠 Built With <a name="built-with"> RUBY  git git-flow  github</a>
+- <a href="https://www.ruby-lang.org/en/">Ruby</a></li>
 
-### Tech Stack <a name="tech-stack"></a>
-
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">local host</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Postgres server</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">Ruby</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
+- **[Implement classes and objects in Ruby]**
+- **[Implement encapsulation and inheritance with Ruby]**
+-**[Run a program using the command line]**
 
-- **[ADD FOREIGN AND PROMARY KEY]**
-- **[INSERT INTO TABELS]**
-- **[USE AGGREGATES]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
 
 To get a local copy up and running, follow these steps.
 
@@ -85,136 +41,81 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-1 install ruby in your local machine
+- Command line or Terminal
 
-2 well funcitioning vs code editor
+- IDE such as Vs Code 
 
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
+- Ruby needs to be installed on your system.
 
 ### Setup
 
 Clone this repository to your desired folder:
 
+- Open the command prompt/terminal and navigate to your desire folder
 
-   git clone  https://github.com/juaryimami/OOP_SCHOOL_LIBRARY.git
-
-
-
-<!--
-Example commands:
+- On the terminal run this command
 
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/juaryimami/OOP_SCHOOL_LIBRARY.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
+Run the following commands
 
 ```sh
-  cd my-project
-  gem install
+  cd OOP_SCHOOL_LIBRARY
+  bundle install
 ```
---->
 
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
+### Usage 
 
 ```sh
-  rails server
+  ruby main.rb
 ```
---->
-
-### Run tests
-
-To run tests, run the sql files to your database
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-<!--
-Example:
-
-```sh
-
-```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Juhar Yimer**
 
-- GitHub: [@juaryimami](https://github.com/juaryimami)
-- LinkedIn: [juhar yimer](https://linkedin.com/in/juhar-yimer)
+- GitHub: [Juhar Yimer](https://github.com/juaryimami) 
+
+- LinkedIn: [Juhar Yimer](https://www.linkedin.com/in/juhar-yimer/) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[ADD FOREIGN AND PROMARY KEY]**
-- [ ] **[INSERT INTO TABELS]**
-- [ ] **[USE AGGREGATES]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
+- [ ] **[Implement better UI]**
+- [ ] **[Reduce Time Complexity]**
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page]( https://github.com/juaryimami/OOP_SCHOOL_LIBRARY/issues/).
+Feel free to check the [issues page](https://github.com/juaryimami/OOP_SCHOOL_LIBRARY/issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project give me star it will help my carrieer and motivate me to work more
+If you like this project kindly leave a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
- 
- I would like to thank Microverse for giving me this opportunities
+
+- I would like to thank [Microverse](https://www.microverse.org/) for giving me this opportunity to learn and grow as a developer.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

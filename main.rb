@@ -1,51 +1,35 @@
-require 'app'
-require_relative 'preserve'
+require_relative './app'
 
 def main
   app = App.new
-
+  status = true
   puts 'Welcome to School Library App!'
-  loaded_data = Preserve.new(app)
-  loaded_data.load_data
+  while status
+    option = app.ui_init
 
-  options = {
-    'List all books' => :list_books,
-    'List all people' => :list_people,
-    'Create a person' => :create_person,
-    'Create a book' => :create_book,
-    'Create a rental' => :create_rental,
-    'List all rentals for a given person id' => :list_rentals_by_person_id,
-    'Exit' => :exit
-  }
-
-  loop_method(app, options)
-end
-
-def loop_method(app, options)
-  loop do
-    option = get_menu_option(options)
-    method = options[option]
-    if method == :exit
-      data = Preserve.new(app)
-      data.save_data
+    case option
+    when '1'
+      ShowInformation.new.all_books(app.books)
+    when '2'
+      ShowInformation.new.all_people(app.people)
+    when '3'
+      CreatePerson.new.create_person(app.people)
+    when '4'
+      CreateBook.new.create_book(app.books)
+    when '5'
+      CreateRental.new.create_rental(app.books, app.people, app.rentals)
+    when '6'
+      ShowInformation.new.all_rentals_id(app.rentals)
+    when '7'
       puts 'Thank you for using this app!'
-      break
+      puts
+      app.save_data
+      status = false
     else
-      app.send(method)
+      puts 'Sorry, you choose a wrong option'
+      puts
     end
   end
 end
 
-def get_menu_option(options)
-  puts 'Please choose an option by entering a number:'
-  options.each_with_index { |(option, _), index| puts "#{index}) #{option}" }
-
-  option = gets.chomp.to_i
-  if option >= 0 && option < options.size
-    options.keys[option]
-  else
-    puts 'That is not a valid option'
-    get_menu_option(options)
-  end
-end
 main
