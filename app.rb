@@ -86,6 +86,9 @@ class App
   end
 
   def people_data
+    if(@people.NilClass)
+      return
+    end
     @people.map do |person|
       if person.instance_of?(Student)
         { tipo: person.class, name: person.name, id: person.id, age: person.age,
