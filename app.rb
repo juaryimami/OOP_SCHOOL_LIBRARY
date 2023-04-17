@@ -86,9 +86,6 @@ class App
   end
 
   def people_data
-    if(@people.NilClass)
-      return
-    end
     @people.map do |person|
       if person.instance_of?(Student)
         { tipo: person.class, name: person.name, id: person.id, age: person.age,
@@ -108,8 +105,8 @@ class App
 
   def save_data
     File.write('./data/books.json', JSON.generate(book_data))
-    File.write('./data/people.json', JSON.generate(people_data))
-    File.write('./data/rentals.json', JSON.generate(rental_data))
+    File.write('./data/people.json', JSON.generate(people_data)) if people_data.present?
+    File.write('./data/rentals.json', JSON.generate(rental_data)) if rental_data.present?
   end
 
   def ui_init
