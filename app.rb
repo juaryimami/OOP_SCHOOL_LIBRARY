@@ -6,7 +6,6 @@ require_relative './classes/book'
 require_relative './classes/student'
 require_relative './classes/teacher'
 require 'json'
-
 class App
   attr_accessor :books, :people, :rentals
 
@@ -75,7 +74,7 @@ class App
       if rental.person.instance_of?(Student)
         { date: rental.date, book: { title: rental.book.title, author: rental.book.author },
           person: { tipo: rental.person.class, name: rental.person.name, id: rental.person.id, age: rental.person.age,
-                    parent_permission: rental.person.parent_permission[:parent_permission],
+                    parent_permission: rental.person.parent_permission,
                     classroom: rental.person.classroom } }
       elsif rental.person.instance_of?(Teacher)
         { date: rental.date, book: { title: rental.book.title, author: rental.book.author },
@@ -89,7 +88,7 @@ class App
     @people.map do |person|
       if person.instance_of?(Student)
         { tipo: person.class, name: person.name, id: person.id, age: person.age,
-          parent_permission: person.parent_permission[:parent_permission], classroom: person.classroom }
+          parent_permission: person.parent_permission, classroom: person.classroom }
       elsif person.instance_of?(Teacher)
         { tipo: person.class, name: person.name, id: person.id, age: person.age,
           parent_permission: person.parent_permission, specialization: person.specialization }
@@ -105,8 +104,8 @@ class App
 
   def save_data
     File.write('./data/books.json', JSON.generate(book_data))
-    File.write('./data/people.json', JSON.generate(people_data)) if people_data.present?
-    File.write('./data/rentals.json', JSON.generate(rental_data)) if rental_data.present?
+    File.write('./data/people.json', JSON.generate(people_data))
+    File.write('./data/rentals.json', JSON.generate(rental_data))
   end
 
   def ui_init
@@ -118,7 +117,6 @@ class App
     puts '5 - Create a rental'
     puts '6 - List all rentals for a given person id'
     puts '7 - Exit'
-
     gets.chomp
   end
 end
