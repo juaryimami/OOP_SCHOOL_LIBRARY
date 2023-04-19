@@ -8,11 +8,13 @@ require_relative './classes/teacher'
 require 'json'
 class App
   attr_accessor :books, :people, :rentals
+
   def initialize()
     @books = load_data_books
     @people = load_data_people
     @rentals = load_data_rentals
   end
+
   def load_data_books
     file = File.open('./data/books.json', 'a+')
     show = File.read('./data/books.json')
@@ -25,6 +27,7 @@ class App
     file.close
     []
   end
+
   def load_data_people
     file = File.open('./data/people.json', 'a+')
     show = File.read('./data/people.json')
@@ -47,6 +50,7 @@ class App
     file.close
     []
   end
+
   def load_data_rentals
     file = File.open('./data/rentals.json', 'a+')
     show = File.read('./data/rentals.json')
@@ -64,6 +68,7 @@ class App
     file.close
     []
   end
+
   def rental_data
     @rentals.map do |rental|
       if rental.person.instance_of?(Student)
@@ -78,6 +83,7 @@ class App
       end
     end
   end
+
   def people_data
     @people.map do |person|
       if person.instance_of?(Student)
@@ -89,16 +95,19 @@ class App
       end
     end
   end
+
   def book_data
     @books.map do |book|
       { title: book.title, author: book.author }
     end
   end
+
   def save_data
     File.write('./data/books.json', JSON.generate(book_data))
     File.write('./data/people.json', JSON.generate(people_data))
     File.write('./data/rentals.json', JSON.generate(rental_data))
   end
+
   def ui_init
     puts "\nPlease choose an option by entering a number:"
     puts '1 - List all books'
