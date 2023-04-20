@@ -1,7 +1,4 @@
-# require 'rspec/autorun'
 require_relative '../classes/rental.rb'
-require_relative '../classes/book.rb'
-require_relative '../classes/person.rb'
 
 describe  Rental  do 
 it 'should initialize with a book, person, and date' do 
