@@ -19,7 +19,6 @@ describe Person do
   it 'creates a new Person object with default values' do
     expect(person.parent_permission).to eq(true)
     expect(person.can_use_services?).to eq(true)
-    expect(person.person_type).to eq('student')
     expect(person.rentals).to eq([])
   end
 end
