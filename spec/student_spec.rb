@@ -1,5 +1,4 @@
-require_relative '../classes/student.rb'
-
+require_relative '../classes/student'
 
 describe Student do
   describe '#initialize' do

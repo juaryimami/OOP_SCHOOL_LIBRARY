@@ -1,4 +1,4 @@
-require_relative '../classes/teacher.rb'
+require_relative '../classes/teacher'
 
 describe Teacher do
   it 'correctly sets the age, specialization, name and parent_permission' do
