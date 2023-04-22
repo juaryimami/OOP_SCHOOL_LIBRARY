@@ -21,4 +21,17 @@ describe Person do
     expect(person.can_use_services?).to eq(true)
     expect(person.rentals).to eq([])
   end
+  it 'The validate_name method corrects the name' do
+    person = Person.new(20, 'nameTest')
+    person.validate_name(person.name)
+    expect(person.name).to eql 'Nametest'
+  end
+  it 'The add_rental method returns a rental and adds its to the book' do
+    book = Book.new('Love Till Death', 'Hadis Alemayehu')
+    person = Person.new(24, 'Markon')
+
+    rental = person.add_rental(book, '2023-05-04')
+
+    expect(person.rentals).to eql [rental]
+  end
 end
